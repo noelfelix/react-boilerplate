@@ -4,12 +4,15 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "immutable": "^3.8.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
-    "redux-saga": "^0.16.0",
-    "source-map-explorer": "^1.5.0"
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
   },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
@@ -17,5 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "source-map-explorer": "^1.5.0"
   }
 }

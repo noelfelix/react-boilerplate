@@ -1,0 +1,1 @@
+export const REMOVE_FILE_ON_INIT = function* () {};
