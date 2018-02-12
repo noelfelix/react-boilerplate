@@ -10,12 +10,6 @@ export class Router extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route exact
-            path="/NAV_STUB"
-            component={NAV_STUB} />
-          <Route exact
-            path="/"
-            component={MainContainer} />
         </div>
       </BrowserRouter>
     );

@@ -5,6 +5,9 @@ import { MainContainer } from './MainContainer';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<MemoryRouter><MainContainer /></MemoryRouter>, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <MainContainer />
+    </MemoryRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
