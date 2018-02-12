@@ -26,7 +26,7 @@ export const getStore = () => {
   const sagaMiddleWare = createSagaMiddleWare();
 
   const middleWares = [sagaMiddleWare];
-  if (getQuery()['logger']) {
+  if (getQuery()['logger'] && process.env.NODE_ENV === `development`) {
     middleWares.push(logger)
   }
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
